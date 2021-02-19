@@ -1,0 +1,96 @@
+html,
+body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+    /* background: #000; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+   }
+
+#wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.guang {
+    position: absolute;
+    top: .666667rem;
+    width: 100%;
+    animation: rotate 3s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hongbao {
+    position: absolute;
+    top: 2.3rem;  
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 8.666667rem;
+    height: 11.293333rem;
+    pointer-events:none;
+}
+
+.monny {
+    position: absolute;
+    top: 7.3rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 4.426667rem;
+    height: 1.52rem;
+}
+
+.btnImg {
+    position: absolute;
+    top: 11.066667rem;  /*830px*/
+    width: 10rem;
+    height: .92rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 4.24rem;
+    height: .92rem;
+    animation: beat .5s alternate linear infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
